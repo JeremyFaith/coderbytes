@@ -47,6 +47,6 @@ function CountingMinutesI(str) {
   //timeSecond = (/pm/).test(newstr[1])? 60*24: 0  like using this pattern
 
   // messy with the seperation of string 
-  // redo with two function 
+  // redo with two function
   // 1 to seperate string
   // 2 to replace three main if statements
