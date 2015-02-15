@@ -17,7 +17,7 @@ function Palindrome(str) {
 
 function Palindrome(str) { 
   
-  str = str.replace(/\s+/g, "");
+  str = str.toLowerCase().replace(/\s+/g, "");
   var length = str.length; 
       
   (length % 2 != 0)?  delta = 1: delta = 0;
