@@ -1,18 +1,18 @@
 function NumberAddition(str) { 
 	
-  str = str.split(/[a-zA-Z\W]/); 
+  var strArr = str.split(/[a-zA-Z\W]/); 
   
-  str = str.filter(function(e) {
+  strArr = strArr.filter(function(e) {
   	return e != "";
   });
   
-  if(str == '') {return 0}
+  if(strArr == '') {return 0}
   
-  str = str.reduce(function(first, second) {
+  strArr = strArr.reduce(function(first, second) {
   	return parseInt(first) + parseInt(second);
   });
 
-  return str;   
+  return strArr;   
 }
 
 // Could have used for loop but

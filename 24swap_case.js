@@ -1,8 +1,8 @@
 function SwapCase(str) { 
 
-  str = str.split("");
+  var strArr = str.split("");
   
-  newstr = str.map(function(e) {
+  newArr = strArr.map(function(e) {
   		if(e.charCodeAt(0) > 64 && e.charCodeAt(0) < 91) {
   			return e.toLowerCase();
         }else if (e.charCodeAt(0) > 96 && e.charCodeAt(0) < 123) {
@@ -10,6 +10,6 @@ function SwapCase(str) {
         }else { return e;}
   });
     
-  return newstr.join(""); 
+  return newArr.join(""); 
          
 }

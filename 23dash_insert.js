@@ -1,16 +1,16 @@
 function DashInsert(str) { 
 
-  var newstr = [];
+  var newArr = [];
   
-  str = str.toString().split("");
+  var strArr = str.toString().split("");
   
-  for(var i = 0; i < str.length - 1; i++) {
-    newstr.push(str[i]);
-  	if (str[i] % 2 != 0 && str[i + 1] % 2 != 0) {
-    	newstr.push("-")
+  for(var i = 0; i < strArr.length - 1; i++) {
+    newArr.push(strArr[i]);
+    if (strArr[i] % 2 != 0 && strArr[i + 1] % 2 != 0) {
+      newArr.push("-")
     }
   }
-  newstr.push(str[str.length - 1]);
+  newArr.push(strArr[strArr.length - 1]);
      
-  return newstr.join("");
+  return newArr.join("");
 }
