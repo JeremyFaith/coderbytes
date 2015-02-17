@@ -1,4 +1,4 @@
-function LetterCountI(str) {
+function LetterCount(str) {
   
     var finalCount = 0;
     var finalWord = "";
